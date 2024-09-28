@@ -1,0 +1,36 @@
+#mediaImage {
+    width: 300px;
+    height: 150px; /* Altura reduzida para mostrar a imagem cortada */
+    object-fit: cover; /* Ajusta a imagem dentro da área */
+    object-position: top; /* Mostra o topo da imagem inicialmente */
+    transition: height 0.5s ease; /* Animação ao mostrar a imagem completa */
+    }
+
+    body {
+        display: flex;
+       /* flex-direction: column;*/
+        align-items: center;
+        background-color:rgb(243, 243, 243);
+        background-image: url('pexels-pietrozj-65128.jpg');
+        background-size:cover ;
+        background-repeat: repeat-y;
+        background-position: top;
+        background-attachment: fixed;
+        /*background-size:contain;*/
+
+     }
+button{
+    color: black;
+    font-size: larger;
+    text-align: center;
+ border-style: solid;
+    margin-top: 10px;
+    background-color: rgb(177, 175, 179);
+    margin-top: 10px;
+    border-radius: 9px;
+    box-shadow: 3px 3px 10px rgb(19, 4, 19);
+}
+
+
+
+     
