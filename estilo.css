@@ -1,5 +1,5 @@
 #mediaImage {
-    width: 300px;
+    width: 600px;
     height: 150px; /* Altura reduzida para mostrar a imagem cortada */
     object-fit: cover; /* Ajusta a imagem dentro da área */
     object-position: top; /* Mostra o topo da imagem inicialmente */
@@ -31,6 +31,45 @@ button{
     box-shadow: 3px 3px 10px rgb(19, 4, 19);
 }
 
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+header{
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(200, 154, 202);
+ background-size: no-repeat ;
+    background-position: center;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide {
+    0%{background-image: url(pexels-conojeghuo-375885.jpg);}   
+    25%{background-image: url(pexels-cottonbro-3945316.jpg);}   
+    50%{background-image: url(pexels-cottonbro-3945321.jpg);}   
+    75%{background-image: url(pexels-donaldtong94-109669.jpg);}   
+    100%{background-image: url(pexels-pietrozj-65128.jpg);}   
+  }
 
 
-     
+  body{
+    background-image: url(pexels-conojeghuo-375885.jpg) ;
+    background-repeat: no-repeat;
+    border-right-color: rgb(111, 147, 168);
+    background-size: cover;
+    }
+
+    main{
+        max-width: 700px;
+        margin: 0 auto;
+        }
+        
+        .titulo{
+            color: blue;
+            text-align: center;
+        }

@@ -58,7 +58,7 @@ displayQuestion();
 isMovieRound = !isMovieRound;
 }
 function displayQuestion() {
-    document.getElementById('question').innerHTML = `<h1> Qual é o filme ou série?</h1>`;
+    document.getElementById('question').innerHTML = `<h1 class="titulo"> Qual é o filme ou série?</h1>`;
     document.getElementById('mediaImage').src =`https://image.tmdb.org/t/p/w500${correctMedia.poster_path}`;
     document.getElementById('mediaImage').style.height = '150px'; // Mostra a imagem cortada
     document.getElementById('mediaImage').style.display = 'block';
@@ -75,12 +75,12 @@ function displayQuestion() {
     optionsDiv.appendChild(button);
     });
     }
-    function checkAnswer(selected) {
+    function checkAnswer(selected) {""
         const resultDiv = document.getElementById('result');
         if (selected.id === correctMedia.id) {
-        resultDiv.innerHTML = '<p>Correto!</p>';
+        resultDiv.innerHTML = '<p class="titulo">Correto!</p>';
         } else {
-        resultDiv.innerHTML = `<p>Incorreto! O filme ou série era: ${correctMedia.title
+        resultDiv.innerHTML = `<p calss="titulo">Incorreto! O filme ou série era: ${correctMedia.title
         || correctMedia.name}</p>`;
         }
         
